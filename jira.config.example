@@ -1,0 +1,3 @@
+JIRA_API_TOKEN=MYSECRETKEY
+JIRA_EMAIL=my_email@my_company.com
+JIRA_ENDPOINT=https://my_domain.atlassian.net
