@@ -30,10 +30,22 @@ vim jira.config
 
 #### View all jira issues
 ```
-./scripts/run.sh list
+docker run -it --env-file jira.config stevemcquaid/jira:latest list
 ```
 
 #### View all issues in the K8S project that contain the text: "Unable to connect to the server: net/http: TLS handshake timeout"
 ```
-./scripts/run.sh list  -q 'project = K8S AND text ~ "Unable to connect to the server: net/http: TLS handshake timeout"'
+docker run -it --env-file jira.config stevemcquaid/jira:latest list  -q 'project = K8S AND text ~ "Unable to connect to the server: net/http: TLS handshake timeout"'
+```
+
+#### You can alias jira locally in order to make your workflow simple
+```
+vim ~/.bash_profile
+
+alias jira="./scripts/run.sh"
+```
+
+Then in your shell you can just use go-jira normally:
+```
+jira list  -q 'project = K8S AND text ~ "Unable to connect to the server: net/http: TLS handshake timeout"'
 ```
