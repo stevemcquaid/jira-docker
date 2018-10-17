@@ -10,5 +10,4 @@ RUN     chmod u+x /root/jira_cmd.sh
 ENTRYPOINT ["/root/jira_cmd.sh"]
 
 # ENTRYPOINT ["/bin/ash", "jira"]
-
 # ENTRYPOINT  ["jira", "--endpoint=$JIRA_ENDPOINT", "--user=$JIRA_EMAIL"]
