@@ -38,7 +38,7 @@ docker run -it --env-file jira.config stevemcquaid/jira:latest list
 docker run -it --env-file jira.config stevemcquaid/jira:latest list  -q 'project = K8S AND text ~ "Unable to connect to the server: net/http: TLS handshake timeout"'
 ```
 
-#### You can alias jira locally in order to make your workflow simple
+## Alias jira docker command
 ```
 vim ~/.bash_profile
 
