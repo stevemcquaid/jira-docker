@@ -42,7 +42,7 @@ docker run -it --env-file jira.config stevemcquaid/jira:latest list  -q 'project
 ```
 vim ~/.bash_profile
 
-alias jira="./scripts/run.sh"
+alias jira="$PATH_TO_REPO/scripts/run.sh"
 ```
 
 Then in your shell you can just use go-jira normally:
