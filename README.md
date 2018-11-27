@@ -24,7 +24,7 @@ JIRA_ENDPOINT=<MY_JIRA_URL>
 # Create the jira.config file
 echo "JIRA_API_TOKEN=$JIRA_API_TOKEN" >> jira.config
 echo "JIRA_EMAIL=$JIRA_EMAIL" >> jira.config 
-echo "JIRA_ENDPOINT=$JIRA_ENDPOINT >> jira.config
+echo "JIRA_ENDPOINT=$JIRA_ENDPOINT" >> jira.config
 
 ## Alias jira docker command
 echo "alias jiraD=\"$PWD/scripts/run.sh\"" >> ~/.bash_profile
